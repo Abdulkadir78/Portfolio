@@ -1,5 +1,6 @@
 import colors from "./colors";
 import fonts from "./fonts";
+import scrollConfig from "./scrollConfig";
 import {
   navLinks,
   typingEffect,
@@ -12,6 +13,7 @@ import {
 export {
   colors,
   fonts,
+  scrollConfig,
   navLinks,
   typingEffect,
   about,

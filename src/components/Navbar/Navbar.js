@@ -39,7 +39,7 @@ function Navbar({ darkTheme, toggleTheme }) {
         <AppBar color="inherit" className={classes.appBar}>
           <Toolbar>
             <Box className={classes.brand}>
-              <Link to="home" smooth={true} offset={-90} duration={0}>
+              <Link to="home" smooth={true} offset={-90}>
                 <IconButton>
                   <Typography color="textSecondary" variant="h5">
                     {"<"}

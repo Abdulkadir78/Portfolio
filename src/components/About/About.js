@@ -14,6 +14,9 @@ import developerAboutAnimation from "../../assets/lotties/developer-about.json";
 const useStyles = makeStyles((theme) => ({
   container: {
     marginTop: 0,
+    [theme.breakpoints.only("sm")]: {
+      marginTop: theme.spacing(15),
+    },
   },
   aboutParas: {
     fontWeight: `${theme.palette.type === "dark" ? "bold" : "normal"}`,

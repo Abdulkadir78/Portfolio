@@ -7,7 +7,3 @@
   font-family: "Montserrat-Regular";
   src: url("./assets/fonts/Montserrat-Regular.ttf");
 }
-
-html {
-  scroll-behavior: smooth;
-}

@@ -11,7 +11,7 @@ import Box from "@material-ui/core/Box";
 import emoji from "react-easy-emoji";
 import Typed from "react-typed";
 
-import { colors, typingEffect } from "../../constants";
+import { colors, scrollConfig, typingEffect } from "../../constants";
 import useGlobalStyles from "../../hooks/useGlobalStyles";
 import DisplayLottie from "../Miscellaneous/DisplayLottie";
 import developerAnimation from "../../assets/lotties/developer-main.json";
@@ -84,6 +84,7 @@ function Home() {
             <Hidden smDown>
               <Box className={classes.greetingBorder} py={5} />
             </Hidden>
+
             <Box className={classes.greetingBox}>
               <Typography
                 color="textSecondary"
@@ -130,7 +131,13 @@ function Home() {
                 />
               </Typography>
 
-              <Link to="about" smooth={true} offset={-90} duration={0}>
+              <Link
+                to="about"
+                smooth={true}
+                offset={
+                  xsScreen ? scrollConfig.offsetSm : scrollConfig.offsetLg
+                }
+              >
                 <Button
                   variant="outlined"
                   color="primary"

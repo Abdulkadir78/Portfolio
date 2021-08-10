@@ -8,7 +8,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import Button from "@material-ui/core/Button";
 import Box from "@material-ui/core/Box";
 
-import { navLinks } from "../../constants";
+import { navLinks, scrollConfig } from "../../constants";
 import ToggleSwitch from "./ToggleSwitch";
 
 const useStyles = makeStyles((theme) => ({
@@ -73,9 +73,8 @@ function MobileNav({ darkTheme, toggleTheme }) {
             <Link
               key={index}
               to={navLink}
-              smooth={true}
-              offset={-60}
-              duration={0}
+              smooth={scrollConfig.smooth}
+              offset={scrollConfig.offsetSm}
             >
               <Button
                 size="large"
