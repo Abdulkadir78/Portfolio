@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "GreatVibes-Regular";
+  src: url("./assets/fonts/GreatVibes-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("./assets/fonts/Montserrat-Regular.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
