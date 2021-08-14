@@ -8,6 +8,9 @@ import useGlobalStyles from "../../hooks/useGlobalStyles";
 import ProjectCards from "./ProjectCards";
 
 const useStyles = makeStyles((theme) => ({
+  container: {
+    overflow: "visible",
+  },
   cardsGrid: {
     marginTop: theme.spacing(1),
     [theme.breakpoints.up("md")]: {
@@ -25,7 +28,11 @@ function Projects() {
 
   return (
     <Fade bottom>
-      <Container fixed className={globalClasses.container} id="projects">
+      <Container
+        fixed
+        className={`${classes.container} ${globalClasses.container}`}
+        id="projects"
+      >
         <Typography
           variant="h2"
           display="inline"
@@ -40,7 +47,6 @@ function Projects() {
           display="inline"
           color="textPrimary"
           className={globalClasses.heading}
-          // noWrap
         >
           jects
         </Typography>
