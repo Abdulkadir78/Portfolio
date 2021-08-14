@@ -49,6 +49,7 @@ function Contact() {
           display="inline"
           color="textPrimary"
           className={`${globalClasses.heading} ${globalClasses.leftHeading}`}
+          noWrap
         >
           Get In{" "}
         </Typography>
@@ -57,6 +58,7 @@ function Contact() {
           display="inline"
           color="primary"
           className={globalClasses.heading}
+          noWrap
         >
           Touch
         </Typography>

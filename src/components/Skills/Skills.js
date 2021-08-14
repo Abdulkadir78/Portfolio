@@ -69,6 +69,7 @@ function Skills() {
           display="inline"
           color="primary"
           className={`${globalClasses.heading} ${globalClasses.leftHeading}`}
+          noWrap
         >
           My{" "}
         </Typography>
@@ -77,6 +78,7 @@ function Skills() {
           display="inline"
           color="textPrimary"
           className={globalClasses.heading}
+          noWrap
         >
           tech{" "}
         </Typography>
@@ -85,6 +87,7 @@ function Skills() {
           display="inline"
           color="textPrimary"
           className={globalClasses.heading}
+          noWrap
         >
           stack
         </Typography>

@@ -1,7 +1,13 @@
 import { makeStyles } from "@material-ui/core/styles";
 
+import { colors } from "../constants";
+
 const useStyles = makeStyles((theme) => ({
   container: {
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    color: colors.primary,
+
     [theme.breakpoints.down("sm")]: {
       marginTop: theme.spacing(10),
       paddingInline: theme.spacing(8),

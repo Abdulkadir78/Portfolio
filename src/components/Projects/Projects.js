@@ -40,6 +40,7 @@ function Projects() {
           display="inline"
           color="textPrimary"
           className={globalClasses.heading}
+          // noWrap
         >
           jects
         </Typography>
