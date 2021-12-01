@@ -5,6 +5,7 @@ const colors = {
   light: "#ffffff",
   textBlack: "#292B2C",
   textGrey: "#707070",
+  textGreyDarkMode: "#C0C0C0",
 
   techLogoGrey: "#868E96",
   emailLogo: "#EA4335",
@@ -13,6 +14,7 @@ const colors = {
   C: "#5B68BA",
   MongoDb: "#10AA50",
   Firebase: "#FFCA2A",
+  Redux: "#764ABC",
   "Data Structures": "#707070",
   "Node.js": "#62935E",
   "React.js": "#5AC6E4",

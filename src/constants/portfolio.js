@@ -22,10 +22,11 @@ const about = {
 
 const projects = [
   {
-    title: "library management system",
-    body: "A simple command line program for library management.",
-    codeLink: "https://github.com/Abdulkadir78/mini-project-in-c",
-    tags: ["C", "Data Structures"],
+    title: "adrak",
+    body: "A project management system web application.",
+    codeLink: "https://github.com/Abdulkadir78/Adrak",
+    demoLink: "https://adrak.vercel.app/",
+    tags: ["React.js", "Redux", "Express.js", "MongoDb"],
   },
   {
     title: "webbuy",
@@ -45,15 +46,8 @@ const projects = [
     title: "ak drive",
     body: "A mobile app to store, view, and download your files and folders.",
     codeLink: "https://github.com/Abdulkadir78/Ak-drive",
-    demoLink: "https://expo.io/@abdulkadir78/projects/Ak-drive",
+    demoLink: "https://expo.dev/@abdulkadir78/Ak-drive",
     tags: ["React native", "Firebase"],
-  },
-  {
-    title: "chattin'",
-    body: "A real-time chat application.",
-    codeLink: "https://github.com/Abdulkadir78/Chat-app",
-    demoLink: "https://chat-app-1.netlify.app/",
-    tags: ["Node.js", "React.js", "Socket.io"],
   },
   {
     title: "git-it",
@@ -61,6 +55,13 @@ const projects = [
     codeLink: "https://github.com/Abdulkadir78/Git-it",
     demoLink: "https://git-it.netlify.app/",
     tags: ["React.js", "Chart.js", "Github API"],
+  },
+  {
+    title: "chattin'",
+    body: "A real-time chat application.",
+    codeLink: "https://github.com/Abdulkadir78/Chat-app",
+    demoLink: "https://chat-app-1.netlify.app/",
+    tags: ["Node.js", "React.js", "Socket.io"],
   },
 ];
 

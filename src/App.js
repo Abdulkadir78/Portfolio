@@ -47,7 +47,7 @@ function App() {
         main: colors.secondary,
       },
       text: {
-        secondary: colors.textGrey,
+        secondary: darkTheme ? colors.textGreyDarkMode : colors.textGrey,
       },
       background: {
         default: darkTheme ? colors.dark : colors.light,
