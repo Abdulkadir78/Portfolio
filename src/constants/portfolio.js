@@ -33,7 +33,7 @@ const projects = [
     body: "An Ecommerce web application.",
     codeLink: "https://github.com/Abdulkadir78/WebBuy",
     demoLink: "https://webbuy78.herokuapp.com/",
-    tags: ["Node.js", "React.js", "MongoDb"],
+    tags: ["React.js", "Node.js", "MongoDb"],
   },
   {
     title: "photoTab",
@@ -61,7 +61,7 @@ const projects = [
     body: "A real-time chat application.",
     codeLink: "https://github.com/Abdulkadir78/Chat-app",
     demoLink: "https://chat-app-1.netlify.app/",
-    tags: ["Node.js", "React.js", "Socket.io"],
+    tags: ["React.js", "Node.js", "Socket.io"],
   },
 ];
 

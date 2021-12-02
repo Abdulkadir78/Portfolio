@@ -149,7 +149,7 @@ function ProjectCard({ project }) {
             <Grid item key={index} className={classes.tagGrid}>
               <Typography
                 className={classes.techCircle}
-                style={{ backgroundColor: `${colors[tag]}` }}
+                style={{ backgroundColor: `${colors[tag.toLowerCase()]}` }}
               />
               <Typography color="textPrimary">{tag}</Typography>
             </Grid>
