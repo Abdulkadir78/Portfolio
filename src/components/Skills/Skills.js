@@ -1,21 +1,15 @@
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { FaDatabase } from "react-icons/fa";
+import { SiRedux, SiCplusplus, SiMongodb, SiGit } from "react-icons/si";
 import {
   IoLogoHtml5,
   IoLogoCss3,
+  IoLogoSass,
   IoLogoJavascript,
   IoLogoNodejs,
   IoLogoReact,
   IoLogoFirebase,
 } from "react-icons/io5";
-
-import {
-  SiCplusplus,
-  SiMongodb,
-  SiGit,
-  SiBootstrap,
-  SiMaterialUi,
-} from "react-icons/si";
 
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Typography from "@material-ui/core/Typography";
@@ -24,6 +18,7 @@ import Grid from "@material-ui/core/Grid";
 import Fade from "react-reveal/Fade";
 
 import { colors } from "../../constants";
+import Skill from "./Skill";
 import useGlobalStyles from "../../hooks/useGlobalStyles";
 import DisplayLottie from "../Miscellaneous/DisplayLottie";
 import developerTechAnimation from "../../assets/lotties/build.json";
@@ -38,10 +33,6 @@ const useStyles = makeStyles((theme) => ({
   techLogo: {
     color: colors.techLogoGrey,
     textAlign: "center",
-  },
-  techText: {
-    fontWeight: `${theme.palette.type === "dark" ? "bold" : "normal"}`,
-    marginTop: theme.spacing(0.5),
   },
   animationGrid: {
     [theme.breakpoints.up("md")]: {
@@ -96,141 +87,63 @@ function Skills() {
           <Grid item xs={12} md={6} lg={5}>
             <Grid
               container
+              spacing={4}
               justifyContent="center"
               alignItems="baseline"
-              spacing={xsScreen ? 4 : 3}
               className={classes.techLogosGrid}
             >
               <Grid item className={classes.techLogo}>
-                <SiCplusplus size={iconSize} />
-                <Typography
-                  align="center"
-                  color="textSecondary"
-                  className={classes.techText}
-                >
-                  C/C++
-                </Typography>
+                <Skill text="C/C++" icon={<SiCplusplus size={iconSize} />} />
               </Grid>
 
               <Grid item className={classes.techLogo}>
-                <IoLogoHtml5 size={iconSize} />
-                <Typography
-                  align="center"
-                  color="textSecondary"
-                  className={classes.techText}
-                >
-                  HTML
-                </Typography>
+                <Skill text="HTML" icon={<IoLogoHtml5 size={iconSize} />} />
               </Grid>
 
               <Grid item className={classes.techLogo}>
-                <IoLogoCss3 size={iconSize} />
-                <Typography
-                  align="center"
-                  color="textSecondary"
-                  className={classes.techText}
-                >
-                  CSS
-                </Typography>
+                <Skill text="CSS" icon={<IoLogoCss3 size={iconSize} />} />
               </Grid>
 
               <Grid item className={classes.techLogo}>
-                <IoLogoJavascript size={iconSize} />
-                <Typography
-                  align="center"
-                  color="textSecondary"
-                  className={classes.techText}
-                >
-                  Javascript
-                </Typography>
+                <Skill text="SASS" icon={<IoLogoSass size={iconSize} />} />
               </Grid>
 
               <Grid item className={classes.techLogo}>
-                <IoLogoNodejs size={iconSize} />
-                <Typography
-                  align="center"
-                  color="textSecondary"
-                  className={classes.techText}
-                >
-                  Nodejs
-                </Typography>
+                <Skill
+                  text="Javascript"
+                  icon={<IoLogoJavascript size={iconSize} />}
+                />
               </Grid>
 
               <Grid item className={classes.techLogo}>
-                <IoLogoReact size={iconSize} />
-                <Typography
-                  align="center"
-                  color="textSecondary"
-                  className={classes.techText}
-                >
-                  Reactjs
-                </Typography>
+                <Skill text="Nodejs" icon={<IoLogoNodejs size={iconSize} />} />
               </Grid>
 
               <Grid item className={classes.techLogo}>
-                <FaDatabase size={iconSize2} />
-                <Typography
-                  align="center"
-                  color="textSecondary"
-                  className={classes.techText}
-                >
-                  SQL
-                </Typography>
+                <Skill text="Reactjs" icon={<IoLogoReact size={iconSize} />} />
               </Grid>
 
               <Grid item className={classes.techLogo}>
-                <SiMongodb size={iconSize2} />
-                <Typography
-                  align="center"
-                  color="textSecondary"
-                  className={classes.techText}
-                >
-                  MongoDb
-                </Typography>
+                <Skill text="Redux" icon={<SiRedux size={iconSize2} />} />
               </Grid>
 
               <Grid item className={classes.techLogo}>
-                <IoLogoFirebase size={iconSize} />
-                <Typography
-                  align="center"
-                  color="textSecondary"
-                  className={classes.techText}
-                >
-                  Firebase
-                </Typography>
+                <Skill text="SQL" icon={<FaDatabase size={iconSize2} />} />
               </Grid>
 
               <Grid item className={classes.techLogo}>
-                <SiGit size={iconSize2} />
-                <Typography
-                  align="center"
-                  color="textSecondary"
-                  className={classes.techText}
-                >
-                  Git
-                </Typography>
+                <Skill text="MongoDb" icon={<SiMongodb size={iconSize2} />} />
               </Grid>
 
               <Grid item className={classes.techLogo}>
-                <SiBootstrap size={iconSize2} />
-                <Typography
-                  align="center"
-                  color="textSecondary"
-                  className={classes.techText}
-                >
-                  Bootstrap
-                </Typography>
+                <Skill
+                  text="Firebase"
+                  icon={<IoLogoFirebase size={iconSize} />}
+                />
               </Grid>
 
               <Grid item className={classes.techLogo}>
-                <SiMaterialUi size={iconSize2} />
-                <Typography
-                  align="center"
-                  color="textSecondary"
-                  className={classes.techText}
-                >
-                  Material-UI
-                </Typography>
+                <Skill text="Git" icon={<SiGit size={iconSize2} />} />
               </Grid>
             </Grid>
           </Grid>
