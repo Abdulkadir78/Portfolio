@@ -18,11 +18,13 @@ const colors = {
   "data structures": "#707070",
   "node.js": "#62935E",
   "express.js": "#EEEEEE",
+  "next.js": "#111111",
   "react.js": "#5AC6E4",
   "react native": "#5AC6E4",
   "socket.io": "#E2DEDE",
   "chart.js": "#FE777B",
   "github api": "#333538",
+  "tmdb api": "#5EC4B9",
 };
 
 export default colors;
