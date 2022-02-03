@@ -71,6 +71,13 @@ const projects = [
     tags: ["Next.js", "Tmdb API"],
   },
   {
+    title: "Shortly",
+    body: "A simple url shortener with a landing page.",
+    codeLink: "https://github.com/Abdulkadir78/Shortly",
+    demoLink: "https://shortly-urls.netlify.app",
+    tags: ["React.js"],
+  },
+  {
     title: "chattin'",
     body: "A real-time chat application.",
     codeLink: "https://github.com/Abdulkadir78/Chat-app",
