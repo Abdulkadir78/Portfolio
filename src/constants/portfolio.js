@@ -22,6 +22,13 @@ const about = {
 
 const projects = [
   {
+    title: "Profeed",
+    body: "A full stack feedback sharing platform where users can interact with project creators.",
+    codeLink: "https://github.com/Abdulkadir78/Profeed",
+    demoLink: "https://profeed.vercel.app",
+    tags: ["Next.js", "Redux", "Firebase"],
+  },
+  {
     title: "adrak",
     body: "A project management system web application.",
     codeLink: "https://github.com/Abdulkadir78/Adrak",
@@ -76,13 +83,6 @@ const projects = [
     codeLink: "https://github.com/Abdulkadir78/Shortly",
     demoLink: "https://shortly-urls.netlify.app",
     tags: ["React.js"],
-  },
-  {
-    title: "chattin'",
-    body: "A real-time chat application.",
-    codeLink: "https://github.com/Abdulkadir78/Chat-app",
-    demoLink: "https://chat-app-1.netlify.app",
-    tags: ["React.js", "Node.js", "Socket.io"],
   },
 ];
 
